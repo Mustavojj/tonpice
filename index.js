@@ -24,7 +24,7 @@ async function sendTONPrice() {
         headers: { "X-CMC_PRO_API_KEY": CMC_API_KEY },
         timeout: 10000
       }
-    );
+    ); 
 
     const cmcData = cmcResp.data.data.TON.quote.USD;
 
