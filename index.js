@@ -43,13 +43,11 @@ async function sendTONPrice() {
     const low = Number(market.low_24h.usd).toFixed(2);
 
     const message =
-`💎 <b>TON/USDT PRICE</b>
+`💎 <b>TON Price:</b> <code>${price}$</code> <b>(${sign}${change}%)
 
-💰 <b>Price:</b> <code>${price}$ (${sign}${change}%)</code>
+☞ High Price (24H):</b> <code>${high}$</code>
 
-🟢 <b>High Price (24H):</b> <code>${high}$</code>
-
-🔴 <b>Low Price (24H):</b> <code>${low}$</code>`;
+☞ <b>Low Price (24H):</b> <code>${low}$</code>`;
 
     await bot.sendMessage(chatId, message, { parse_mode: "HTML" });
 
