@@ -43,7 +43,7 @@ async function sendTONPrice() {
     const low = Number(market.low_24h.usd).toFixed(2);
 
     const message =
-`💎 <b>TON Price:</b> <code>${price}$</code> <b>(${sign}${change}%)
+`ꘜ <b>TON Price:</b> <code>${price}$</code> <b>(${sign}${change}%)
 
 ☞ High Price (24H):</b> <code>${high}$</code>
 
