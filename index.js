@@ -59,4 +59,4 @@ async function sendTONPrice() {
 }
 
 sendTONPrice();
-setInterval(sendTONPrice, 300000);
+setInterval(sendTONPrice, 600000);
